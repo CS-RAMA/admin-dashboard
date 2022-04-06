@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark -py-2 bg-dark">
+  <div class="container d-flex  ">
+    <a class="navbar-brand" href="#">Adminboard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Posts.html">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="categorie.html">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="users.html">Utilisateurs</a>
+        </li>
+        <div class="dropdown d-flex ps-5 ms-5">
+          <button class="btn btn-secondary dropdown-toggle ms-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-person-fill"></i>Bienvenue Rahma
+          </button>
+          <ul class="dropdown-menu text-white bg-white" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="profile.html"  class="nav-link link-white px-2"><i class="bi bi-person-circle"></i>profile</a></li>
+            <li><a class="dropdown-item" href="parametre.html"  class="nav-link link-white px-2"><i class="bi bi-gear"></i>parametre</a></li>
+          </ul>
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link " href="Layout.html" tabindex="-1" aria-disabled="true"> <i class="bi bi-person-x-fill"></i>Logout</a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <header class="py-3 mb-4 border-bottom bg-primary">
+    <div class="container d-flex flex-wrap justify-content-center text-white">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-white text-decoration-none ">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <h1 class="fs-4 "><i class="fa-solid fa-pencil"></i>Posts</h1>
+      </a>
+    </div>
+  </header>
+  <body>
+<div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <form class="d-flex ">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary ms-2" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+</div>
+    <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col py-4"> 
+              <div class="card">
+                <div class="card-body">
+              <table class="table table-striped">
+                <h2>Les posts recents</h2>
+                  <thead class="bg-dark text-light">
+                    <tr>
+                     
+                      <th scope="col">#</th>
+                      <th scope="col">Titre</th>
+                      <th scope="col">Catégorie</th>
+                      <th scope="col">Date du Post</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Post One</td>
+                      <td>Web Development</td>
+                      <td>Octobre12, 2019</td>
+                      <td><button class="btn bg-secondary text-white">>>Details</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Post Two</td>
+                      <td>Tech Gadgets</td>
+                      <td>Octobre 13, 2019</td>
+                      <td><button class=" btn bg-secondary text-white">>>Details</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Post Three</td>
+                      <td>web Development</td>
+                      <td>Octobre 14, 2019</td>
+                      <td><button class=" btn bg-secondary text-white">>>Details</button></td>
+                    
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Post Four</td>
+                      <td>Business</td>
+                      <td>Octobre 15, 2019</td>
+                      <td><button class="btn bg-secondary text-white">>>Details</button></td>
+                    
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Post Five</td>
+                      <td>web Development</td>
+                      <td>Octobre 16, 2019</td>
+                      <td><button class="btn bg-secondary text-white">>>Details</button></td>
+                    
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Post Six</td>
+                      <td>Health & Wellness</td>
+                      <td>Octobre 17, 2019</td>
+                      <td><button class="btn bg-secondary text-white">>>Details</button></td>
+                    
+                    </tr>
+
+                  </tbody>
+                </table>
+                <div class="input-group mb-3">
+                  <button class="btn btn-outline-secondary" type="button">Previous</button>
+                  <button class="btn btn-outline-primary" type="button">1</button>
+                  <button class="btn btn-outline-primary" type="button">2</button>
+                  <button class="btn btn-outline-primary" type="button">3</button>
+                  <button class="btn btn-outline-primary" type="button">Next</button>
+                  <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
+      
